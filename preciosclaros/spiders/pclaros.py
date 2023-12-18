@@ -69,7 +69,6 @@ class PreciosClarosSpider(scrapy.Spider):
         super().__init__(*args, **kwargs)
 
     def start_requests(self):
-        import ipdb;ipdb.set_trace()
         if self.ids:
             for id_sucursal in self.ids:
                 yield scrapy.Request(
